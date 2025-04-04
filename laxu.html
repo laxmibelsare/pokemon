@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Vibes</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background: #f4f4f4; color: #333; line-height: 1.6; }
+        header { background: #333; color: #fff; padding: 20px; text-align: center; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        .genres { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .genre { background: #fff; margin: 10px; padding: 20px; width: calc(33.333% - 20px); box-shadow: 0 0 10px #ccc; }
+        .player { text-align: center; margin: 20px 0; }
+        .player audio { width: 100%; max-width: 500px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 10px; }
+        @media (max-width: 768px) { .genre { width: calc(50% - 20px); } }
+        @media (max-width: 480px) { .genre { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Music Vibes</h1>
+        <p>Your daily dose of awesome music!</p>
+    </header>
+
+    <div class="container">
+        <h2>Genres</h2>
+        <div class="genres">
+            <div class="genre">
+                <h3>Rock</h3>
+                <p>Feel the energy with powerful guitar riffs.</p>
+            </div>
+            <div class="genre">
+                <h3>Pop</h3>
+                <p>Catchy tunes and chart-topping hits.</p>
+            </div>
+            <div class="genre">
+                <h3>Classical</h3>
+                <p>Timeless pieces by musical legends.</p>
+            </div>
+        </div>
+
+        <div class="player">
+            <h2>Now Playing</h2>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Music Vibes. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
